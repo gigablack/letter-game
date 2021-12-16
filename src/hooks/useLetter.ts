@@ -39,6 +39,6 @@ export const useLetter = (coordinate: Vector): LetterState => {
         handleClick,
         letter,
         selected,
-        isValid: state.isValid
+        isValid: state?.isValid
     }
 }

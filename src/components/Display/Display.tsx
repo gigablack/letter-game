@@ -19,8 +19,8 @@ const Display = () => {
     const { state } = useBoard()
     return (
         <Container>
-            <Word status={state.isValid} >{state.word}</Word>
-            <Status status={state.isValid} >{state.isValid ? 'valid' : 'invalid'}</Status>
+            <Word status={state?.isValid} >{state?.word}</Word>
+            <Status status={state?.isValid} >{state?.isValid ? 'valid' : 'invalid'}</Status>
         </Container>
     )
 }
