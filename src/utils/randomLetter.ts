@@ -1,7 +1,7 @@
-import dictionaryWords from '../boardFiles/dictionary.json'
+import dictionaryWords from "../boardFiles/dictionary.json"
 
-const LETTERS: string = dictionaryWords.words.map(w => w.toUpperCase()).join('')
+const LETTERS: string = dictionaryWords.words.map(w => w.toUpperCase()).join("")
 
 export const randomLetter = (): string => {
-    return LETTERS[Math.ceil(Math.random()* LETTERS.length) - 1]
+  return LETTERS[Math.ceil(Math.random() * LETTERS.length) - 1]
 }

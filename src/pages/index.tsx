@@ -2,8 +2,8 @@ import React from "react"
 import Board from "../components/Board/Board"
 import ClearButton from "../components/ClearButton/ClearButton"
 import Display from "../components/Display/Display"
-import tw from 'twin.macro'
-import { Helmet } from 'react-helmet'
+import tw from "twin.macro"
+import { Helmet } from "react-helmet"
 
 const MainContainer = tw.main`
 h-screen px-1 flex items-center justify-center
@@ -22,7 +22,7 @@ w-1/2 hidden md:flex flex-col justify-between
 export default function Home() {
   return (
     <MainContainer>
-      <Helmet title='Letter Game' />
+      <Helmet title="IWords" />
       <Container>
         <Board />
         <DisplayContainer>
@@ -32,7 +32,7 @@ export default function Home() {
       </Container>
       <MobileContaner>
         <ClearButton />
-          <Board />
+        <Board />
         <Display />
       </MobileContaner>
     </MainContainer>
